@@ -1,0 +1,47 @@
+{
+  "name": "defi-yield-aggregator",
+  "version": "1.0.0",
+  "description": "DeFi Yield Aggregator - Automated cross-protocol yield optimization",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexyledger/defi-yield-aggregator.git"
+  },
+  "keywords": [
+    "defi",
+    "yield",
+    "aggregator",
+    "ethereum",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.9",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^25.2.0",
+    "chai": "^6.2.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.16.0",
+    "hardhat": "^2.22.17",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.17",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.9.3"
+  }
+}
