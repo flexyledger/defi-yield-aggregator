@@ -13,9 +13,6 @@ interface IStrategy {
     /// @notice Returns the address of the token this strategy accepts
     function want() external view returns (address);
 
-    /// @notice Returns the name of this strategy
-    function name() external view returns (string memory);
-
     /// @notice Deposits all available `want` tokens into the strategy
     function deposit() external;
 
@@ -35,19 +32,9 @@ interface IStrategy {
     /// @return The estimated total assets in `want` token
     function estimatedTotalAssets() external view returns (uint256);
 
-    /// @notice Returns the current APR of this strategy (in basis points)
-    /// @return The APR in basis points (10000 = 100%)
+    /// @notice Returns the current APR of this strategy
     function apr() external view returns (uint256);
 
     /// @notice Emergency function to withdraw all funds to the vault
     function emergencyWithdraw() external;
-
-    /// @notice Returns whether this strategy is active
-    function isActive() external view returns (bool);
-
-    // Events
-    event Deposited(uint256 amount);
-    event Withdrawn(uint256 amount);
-    event Harvested(uint256 profit, uint256 loss);
-    event EmergencyWithdrawal(uint256 amount);
 }
