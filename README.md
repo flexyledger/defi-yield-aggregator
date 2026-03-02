@@ -377,3 +377,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [⬆ Back to Top](#defi-yield-aggregator)
 
 </div>
+
+## Security
+- [Immunefi Bug Bounty Program Setup](docs/IMMUNEFI_BUG_BOUNTY_PROGRAM.md)
+
